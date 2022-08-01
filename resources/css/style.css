@@ -6,8 +6,11 @@ header{
     background-color: gray;
     padding-bottom: 20px;
     padding-top: 20px;
-    padding-left: 20px;
+    padding-left: 20px; 
 }
+header #mylinks{
+    display: none;
+  }
 section h1{
     margin-top: 10px;
     text-align: center;
@@ -19,16 +22,45 @@ section h1{
     gap: 10px;
     justify-content: center;
     margin-top: 50px;
+    margin-left:30px;
+    margin-right: 30px;
+    margin-bottom:200px;
+
  }  
 .holder{
     background-color: gray;
-    width: 30%;
+    height: auto;
     padding: 10px;
 
 }
 .holder h2{
     text-align: center;
 }
+
 @media (max-width: 767px) {
-    
+      .holder{width: 70%;
+      } 
+      #link-holder{
+        visibility:visible; 
+      }
+      
+
+}
+@media (min-width:768px)and(max-width: 992px){
+     .holder{
+       width: 40%;
+      }
+     .holder1{
+       width: 70%;
+     }
+     #link-holder{
+      visibility: hidden;}
+} 
+@media (max-width: 1200px)and(min-width:993){
+    .holder{
+        width: 30%;
+     }
+     #link-holder{
+      visibility: hidden;
+}
 }
